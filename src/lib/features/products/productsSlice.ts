@@ -1,14 +1,7 @@
 import { createSlice, Reducer } from "@reduxjs/toolkit";
 import { getProducts, getProductByAsin } from "./productsOperations";
+import { Product } from '@/types/product';
 
-export type Product = {
-    asin: string;
-    name: string;
-    price: number;
-    img: string;
-    bsr_category: string;
-    link: string;
-};
 
 export type ProductsState = {
     products: Product[];

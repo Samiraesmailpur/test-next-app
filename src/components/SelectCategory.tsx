@@ -1,16 +1,7 @@
 import {useEffect, useState} from "react";
 import * as React from "react";
 import { useRouter, useSearchParams } from 'next/navigation';
-
-
-type Product = {
-    asin: string;
-    name: string;
-    price: number;
-    img: string;
-    bsr_category: string;
-    link: string;
-};
+import { Product } from '@/types/product';
 
 interface ProductsProps {
     products: Product[],
